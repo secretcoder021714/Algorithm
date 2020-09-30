@@ -47,6 +47,9 @@ void sort(int *arr , int start , int end)
         sort(arr , start ,mid);
         sort(arr,mid+1,end);
         merge(arr,start,mid,end);
+        printf("\nArray in function (sort) : ");
+        for(int i = start ; i <= end ; i++)
+            printf("%d ", *(arr+i));
     }
 }
 
