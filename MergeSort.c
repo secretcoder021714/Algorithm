@@ -1,5 +1,6 @@
 //This is hedaer file section
 #include <stdio.h>
+//This library is used for malloc functiuon
 #include <stdlib.h>
 
 //FUnction Declaration
@@ -15,7 +16,7 @@ void merge(int *arr , int start , int mid , int end)
     int n1 = mid - start + 1;
     int n2 = end - mid;
     int *arr1 = (int *)malloc(sizeof(int) * n1);
-    int *arr2 = (int *)malloc(sizeof(int) * n2);
+    int *arr2 = (int *)malloc(sizeof(int) * n2); //Extra storage is required for Merging!
     for(i = 0 ; i < n1 ; i++)
         arr1[i] = arr[start + i];
     for(i = 0 ; i < n2 ; i++)
