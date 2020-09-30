@@ -1,11 +1,14 @@
+//This is hedaer file section
 #include <stdio.h>
 #include <stdlib.h>
 
+//FUnction Declaration
 void sort(int * , int ,int );
 void merge(int * , int ,int ,int);
 void input(int * , int );
 void display(int * , int);
 
+//defining function
 void merge(int *arr , int start , int mid , int end)
 {
     int i , j,k;
@@ -69,6 +72,8 @@ void display(int *arr , int n)
         printf("%4d ",*(arr+i));
 }
 
+
+//main() function
 int main()
 {
     int n , *arr ,i;
